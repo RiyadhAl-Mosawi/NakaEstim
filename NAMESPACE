@@ -1,4 +1,4 @@
-useDynLib(NakaEstLib, .registration=TRUE)
+useDynLib(NakaEstim, .registration=TRUE)
 importFrom(Rcpp, evalCpp)
 importFrom(VGAM, pnaka)
 importFrom(VGAM, dnaka)

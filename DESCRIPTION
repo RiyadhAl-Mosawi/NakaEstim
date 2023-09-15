@@ -1,6 +1,6 @@
-Package: NakaEstLib
+Package: NakaEstim
 Type: Package
-Title: Estimation of Nakagami Distribution Parameters
+Title: Estimation of Nakagami Distribution Parameters under first-failure progressive censored data
 Version: 1.0
 Date: 2023-9-6
 Author: Riyadh Al-Mosawi

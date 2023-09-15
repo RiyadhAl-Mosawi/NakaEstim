@@ -2,38 +2,38 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 my_gam <- function(x) {
-    .Call(`_NakaEstLib_my_gam`, x)
+    .Call(`_NakaEstim_my_gam`, x)
 }
 
 mu <- function(x, y) {
-    .Call(`_NakaEstLib_mu`, x, y)
+    .Call(`_NakaEstim_mu`, x, y)
 }
 
 sig <- function(x, y) {
-    .Call(`_NakaEstLib_sig`, x, y)
+    .Call(`_NakaEstim_sig`, x, y)
 }
 
 my_HPD <- function(x) {
-    .Call(`_NakaEstLib_my_HPD`, x)
+    .Call(`_NakaEstim_my_HPD`, x)
 }
 
 spmk_fun <- function(para, l, u, t, m, s) {
-    .Call(`_NakaEstLib_spmk_fun`, para, l, u, t, m, s)
+    .Call(`_NakaEstim_spmk_fun`, para, l, u, t, m, s)
 }
 
 spmk_grad <- function(para, l, u, t, m, s) {
-    .Call(`_NakaEstLib_spmk_grad`, para, l, u, t, m, s)
+    .Call(`_NakaEstim_spmk_grad`, para, l, u, t, m, s)
 }
 
 GenData <- function(para, R) {
-    .Call(`_NakaEstLib_GenData`, para, R)
+    .Call(`_NakaEstim_GenData`, para, R)
 }
 
 Estim <- function(para, X, R, k, type, method, lw, up) {
-    .Call(`_NakaEstLib_Estim`, para, X, R, k, type, method, lw, up)
+    .Call(`_NakaEstim_Estim`, para, X, R, k, type, method, lw, up)
 }
 
 MH_sample <- function(type, para, se, R, X, k, l, u, t, MC_size, MC_burn, q, c, verbose = 0L, display_progress = TRUE) {
-    .Call(`_NakaEstLib_MH_sample`, type, para, se, R, X, k, l, u, t, MC_size, MC_burn, q, c, verbose, display_progress)
+    .Call(`_NakaEstim_MH_sample`, type, para, se, R, X, k, l, u, t, MC_size, MC_burn, q, c, verbose, display_progress)
 }
 

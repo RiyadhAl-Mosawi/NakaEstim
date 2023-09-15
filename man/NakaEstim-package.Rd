@@ -1,6 +1,6 @@
-\name{NakaEstLib-package}
-\alias{NakaEstLib-package}
-\alias{NakaEstLib}
+\name{NakaEstim-package}
+\alias{NakaEstim-package}
+\alias{NakaEstim}
 \docType{package}
 \title{
   A short title line describing what the package does
@@ -14,9 +14,9 @@
   package, including the most important functions.
 }
 \author{
-Your Name, email optional.
+Riyadh Al-Mosawi, riyadhrm@gmail.com.
 
-Maintainer: Your Name <your@email.com>
+Maintainer: Riyadh Al-Mosawi <riyadhrm@gmail.com>
 }
 \references{
   This optional section can contain literature or other references for
