@@ -1,0 +1,13 @@
+Package: NakaEstLib
+Type: Package
+Title: Estimation of Nakagami Distribution Parameters
+Version: 1.0
+Date: 2023-9-6
+Author: Riyadh Al-Mosawi
+Maintainer: Riyadh Al-Mosawi <riyadhrm@gmail.com>
+Description: This library includes the functions that can be used to estimate the parameters of Nakagmai distribution.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.10)
+Imports: VGAM, pracma, RcppArmadillo, RcppEigen, RcppProgress, coda
+LinkingTo: Rcpp, RcppArmadillo, RcppNumerical, roptim, RcppEigen, RcppProgress
+
