@@ -14,7 +14,7 @@ Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 
 // my_gam
 double my_gam(double x);
-RcppExport SEXP _NakaEstLib_my_gam(SEXP xSEXP) {
+RcppExport SEXP _NakaEstim_my_gam(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -25,7 +25,7 @@ END_RCPP
 }
 // mu
 double mu(double x, double y);
-RcppExport SEXP _NakaEstLib_mu(SEXP xSEXP, SEXP ySEXP) {
+RcppExport SEXP _NakaEstim_mu(SEXP xSEXP, SEXP ySEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -37,7 +37,7 @@ END_RCPP
 }
 // sig
 double sig(double x, double y);
-RcppExport SEXP _NakaEstLib_sig(SEXP xSEXP, SEXP ySEXP) {
+RcppExport SEXP _NakaEstim_sig(SEXP xSEXP, SEXP ySEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -49,7 +49,7 @@ END_RCPP
 }
 // my_HPD
 NumericVector my_HPD(NumericVector x);
-RcppExport SEXP _NakaEstLib_my_HPD(SEXP xSEXP) {
+RcppExport SEXP _NakaEstim_my_HPD(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -60,7 +60,7 @@ END_RCPP
 }
 // spmk_fun
 double spmk_fun(Rcpp::NumericVector para, double l, double u, double t, double m, double s);
-RcppExport SEXP _NakaEstLib_spmk_fun(SEXP paraSEXP, SEXP lSEXP, SEXP uSEXP, SEXP tSEXP, SEXP mSEXP, SEXP sSEXP) {
+RcppExport SEXP _NakaEstim_spmk_fun(SEXP paraSEXP, SEXP lSEXP, SEXP uSEXP, SEXP tSEXP, SEXP mSEXP, SEXP sSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -76,7 +76,7 @@ END_RCPP
 }
 // spmk_grad
 Rcpp::NumericVector spmk_grad(Rcpp::NumericVector para, double l, double u, double t, double m, double s);
-RcppExport SEXP _NakaEstLib_spmk_grad(SEXP paraSEXP, SEXP lSEXP, SEXP uSEXP, SEXP tSEXP, SEXP mSEXP, SEXP sSEXP) {
+RcppExport SEXP _NakaEstim_spmk_grad(SEXP paraSEXP, SEXP lSEXP, SEXP uSEXP, SEXP tSEXP, SEXP mSEXP, SEXP sSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -92,7 +92,7 @@ END_RCPP
 }
 // GenData
 Rcpp::NumericVector GenData(Rcpp::NumericVector para, Rcpp::NumericVector R);
-RcppExport SEXP _NakaEstLib_GenData(SEXP paraSEXP, SEXP RSEXP) {
+RcppExport SEXP _NakaEstim_GenData(SEXP paraSEXP, SEXP RSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -104,7 +104,7 @@ END_RCPP
 }
 // Estim
 Rcpp::List Estim(arma::vec para, arma::vec X, arma::vec R, int k, std::string type, std::string method, arma::vec lw, arma::vec up);
-RcppExport SEXP _NakaEstLib_Estim(SEXP paraSEXP, SEXP XSEXP, SEXP RSEXP, SEXP kSEXP, SEXP typeSEXP, SEXP methodSEXP, SEXP lwSEXP, SEXP upSEXP) {
+RcppExport SEXP _NakaEstim_Estim(SEXP paraSEXP, SEXP XSEXP, SEXP RSEXP, SEXP kSEXP, SEXP typeSEXP, SEXP methodSEXP, SEXP lwSEXP, SEXP upSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -122,7 +122,7 @@ END_RCPP
 }
 // MH_sample
 Rcpp::List MH_sample(std::string type, NumericVector para, NumericVector se, NumericVector R, NumericVector X, int k, double l, double u, double t, int MC_size, int MC_burn, double q, double c, int verbose, bool display_progress);
-RcppExport SEXP _NakaEstLib_MH_sample(SEXP typeSEXP, SEXP paraSEXP, SEXP seSEXP, SEXP RSEXP, SEXP XSEXP, SEXP kSEXP, SEXP lSEXP, SEXP uSEXP, SEXP tSEXP, SEXP MC_sizeSEXP, SEXP MC_burnSEXP, SEXP qSEXP, SEXP cSEXP, SEXP verboseSEXP, SEXP display_progressSEXP) {
+RcppExport SEXP _NakaEstim_MH_sample(SEXP typeSEXP, SEXP paraSEXP, SEXP seSEXP, SEXP RSEXP, SEXP XSEXP, SEXP kSEXP, SEXP lSEXP, SEXP uSEXP, SEXP tSEXP, SEXP MC_sizeSEXP, SEXP MC_burnSEXP, SEXP qSEXP, SEXP cSEXP, SEXP verboseSEXP, SEXP display_progressSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -147,19 +147,19 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_NakaEstLib_my_gam", (DL_FUNC) &_NakaEstLib_my_gam, 1},
-    {"_NakaEstLib_mu", (DL_FUNC) &_NakaEstLib_mu, 2},
-    {"_NakaEstLib_sig", (DL_FUNC) &_NakaEstLib_sig, 2},
-    {"_NakaEstLib_my_HPD", (DL_FUNC) &_NakaEstLib_my_HPD, 1},
-    {"_NakaEstLib_spmk_fun", (DL_FUNC) &_NakaEstLib_spmk_fun, 6},
-    {"_NakaEstLib_spmk_grad", (DL_FUNC) &_NakaEstLib_spmk_grad, 6},
-    {"_NakaEstLib_GenData", (DL_FUNC) &_NakaEstLib_GenData, 2},
-    {"_NakaEstLib_Estim", (DL_FUNC) &_NakaEstLib_Estim, 8},
-    {"_NakaEstLib_MH_sample", (DL_FUNC) &_NakaEstLib_MH_sample, 15},
+    {"_NakaEstim_my_gam", (DL_FUNC) &_NakaEstim_my_gam, 1},
+    {"_NakaEstim_mu", (DL_FUNC) &_NakaEstim_mu, 2},
+    {"_NakaEstim_sig", (DL_FUNC) &_NakaEstim_sig, 2},
+    {"_NakaEstim_my_HPD", (DL_FUNC) &_NakaEstim_my_HPD, 1},
+    {"_NakaEstim_spmk_fun", (DL_FUNC) &_NakaEstim_spmk_fun, 6},
+    {"_NakaEstim_spmk_grad", (DL_FUNC) &_NakaEstim_spmk_grad, 6},
+    {"_NakaEstim_GenData", (DL_FUNC) &_NakaEstim_GenData, 2},
+    {"_NakaEstim_Estim", (DL_FUNC) &_NakaEstim_Estim, 8},
+    {"_NakaEstim_MH_sample", (DL_FUNC) &_NakaEstim_MH_sample, 15},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_NakaEstLib(DllInfo *dll) {
+RcppExport void R_init_NakaEstim(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }
