@@ -194,6 +194,7 @@ Estimate=function(
       
       if(it<Sim.no) {it=it+1; next}
       else{
+        mle_res=mps_res=NULL
         mle_res=c(n,m,i1,
                   mean(MLE_Res[,1],na.rm=TRUE),
                   mean(MLE_Res[,1],na.rm=TRUE)-para[1],
@@ -233,7 +234,7 @@ Estimate=function(
                             "ESE.eps","Estim.eta","Bias.eta","MSE.eta","SSE.eta",
                             "ESE.eta","Estim.spmk","Bias.spmk","MSE.spmk","SSE.spmk","ESE.spmk")
         rownames(Res_est)=c("MLE","MPS")
-        
+        mle_aci=mps_aci=NULL
         mle_aci=c(n,m,i1,
                   max(0,mean(MLE_Res[,3],na.rm=TRUE)),
                   mean(MLE_Res[,4],na.rm=TRUE),
@@ -304,6 +305,12 @@ Estimate=function(
         colnames(HPD_res)=c("eps.MLE.L","eps.MLE.CP","eta.MLE.L","eta.MLE.CP","spmk.MLE.L","spmk.MLE.CP",
                             "eps.MPS.L","eps.MPS.CP","eta.MPS.L","eta.MPS.CP","spmk.MPS.L","spmk.MPS.CP")
         rownames(HPD_res)=c("MH")
+        print(Res_est[,1:13])
+        print(Res_est[,c(1:3,14:18)])
+        print(Res_aci[,1:11])
+        print(Res_aci[,c(1:3,12:15)])
+        print(round(Estim,3))
+        print(round(HPD_res,3))
         
         
         sink(paste("ND_n",n,".txt",sep=""),append = TRUE)
